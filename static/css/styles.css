@@ -1,0 +1,146 @@
+/* styles.css */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 16px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+nav h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 5px;
+}
+
+/* Flexbox container to align the lists side by side */
+nav .route-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .route-lists ul {
+  width: 48%; /* Adjust width to leave some space between the columns */
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Content display section */
+#content-display {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#content-display h1,
+#content-display h2,
+#content-display h3 {
+  margin-bottom: 10px;
+}
+
+#content-display h1 {
+  font-size: 20px;
+}
+
+#content-display h2 {
+  font-size: 16px;
+}
+
+#content-display h3 {
+  font-size: 14px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Specific element styles */
+#red {
+  color: #ff4d4d;
+}
+
+/* Button styles */
+button {
+  background: linear-gradient(135deg, #ff4d4d, #ffb84d);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.2);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:focus {
+  outline: none;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}

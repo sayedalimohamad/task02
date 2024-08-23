@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To Home Page</h1>
+      <p>Here you can find the most routing that you can use in this project</p>
+    </header>
+    <nav>
+      <h1>Most routing</h1>
+      <div class="route-lists">
+        <ul>
+          <li>/top_keywords</li>
+          <li>/top_authors</li>
+          <li>/articles_by_date</li>
+          <li>/articles_by_word_count</li>
+          <li>/articles_by_language</li>
+          <li>/articles_by_classes</li>
+          <li>/recent_articles</li>
+          <li>/top_classes</li>
+          <li>/articles_with_video</li>
+        </ul>
+        <ul>
+          <li>/longest_articles</li>
+          <li>/shortest_articles</li>
+          <li>/articles_with_thumbnail</li>
+          <li>/articles_updated_after_publication</li>
+          <li>/articles_grouped_by_coverage</li>
+          <li>/articles_last_x_hours</li>
+          <li>/articles_by_title_length</li>
+          <li>/most_updated_articles</li>
+          <li>And More ...</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div id="content-display">
+        <h1>Note:</h1>
+        <h2>
+          Yo can use http://127.0.0.1:5000/<span id="red">{route-name}</span>
+        </h2>
+        <br />
+        <h3>
+          Example: http://127.0.0.1:5000/<span id="red">top_authors</span>
+          <button>
+            <a href="http://127.0.0.1:5000/top_authors">Try Now</a>
+          </button>
+        </h3>
+      </div>
+    </main>
+    <footer>
+      <p>
+        2024 Al Maaref University ,task 02 | Mohamad Sayed Ali | ID: 10119295
+      </p>
+    </footer>
+  </body>
+</html>
